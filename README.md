@@ -22,10 +22,6 @@ This repository contains a Python program designed for educational purposes to t
 4. Enter the search term when prompted.
 5. View the scraped data in the output.
 
-## Learning Resources
-
-- `web_scraping_tutorial.ipynb`: A Jupyter notebook that walks through the basics of web scraping.
-
 ## License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
