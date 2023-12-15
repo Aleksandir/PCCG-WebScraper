@@ -93,9 +93,7 @@ def scrape_product_category_page(url):
     return products
 
 
-def main():
-    searchTerm = "card".replace(" ", "+")
-
+def scrape_search_page(searchTerm):
     # Get the page
     page_number = 1
     products = {}
@@ -155,6 +153,25 @@ def main():
 
         # Increment page number
         page_number += 1
+
+    return products
+
+
+def main():
+    print("Scraping PCCaseGear...")
+    print("1. Search for a product")
+    print("2. Scrape a product category")
+    choice = input("Enter your choice: ")
+    while choice not in ["1", "2"]:
+        choice = input("Enter your choice: ")
+
+    if choice == "1":
+        category = input("Enter the product category: ")
+        products = scrape_search_page(category)
+    elif choice == "2":
+        url = input("Enter the URL of the product category: ")
+        products = scrape_product_category_page(url)
+
     # Save the data
     save_data(products)
     print(f"{len(products)} products saved to products.json")
