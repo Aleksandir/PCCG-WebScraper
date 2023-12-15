@@ -1,6 +1,7 @@
 import json
 import sys
 
+# TODO Could look at using concurrent.futures to speed up the scraping process, currently seems fast enough
 # from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlparse
 
@@ -65,7 +66,7 @@ def save_data(data):
 
     # Write data back to file
     with open("products.json", "w") as f:
-        json.dump(existing_data, f)
+        json.dump(existing_data, f, indent=2)
 
 
 def scrape_product_category_page(url):
@@ -172,23 +173,27 @@ def scrape_search_page(searchTerm):
 
 def main():
     print("Scraping PCCaseGear...")
-    print("1. Search for a product")
-    print("2. Scrape a product category")
-    choice = input("Enter your choice: ")
-    while choice not in ["1", "2"]:
+    while True:
+        print("1. Search for a product")
+        print("2. Scrape a product category")
+        print("3. Exit")
         choice = input("Enter your choice: ")
+        while choice not in ["1", "2", "3"]:
+            choice = input("Enter your choice: ")
 
-    if choice == "1":
-        category = input("Enter the product category: ")
-        products = scrape_search_page(category)
-    elif choice == "2":
-        url = input("Enter the URL of the product category: ")
-        products = scrape_product_category_page(url)
+        if choice == "1":
+            category = input("Enter the product category: ")
+            products = scrape_search_page(category)
+        elif choice == "2":
+            url = input("Enter the URL of the product category: ")
+            products = scrape_product_category_page(url)
+        elif choice == "3":
+            browser.quit()
+            sys.exit()
 
-    # Save the data
-    save_data(products)
-    print(f"{len(products)} products saved to products.json")
-    browser.quit()
+        # Save the data
+        save_data(products)
+        print(f"{len(products)} products saved to products.json")
 
 
 main()
