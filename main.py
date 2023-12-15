@@ -1,3 +1,6 @@
+import json
+from urllib.parse import urlparse
+
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -25,7 +28,7 @@ def get_page(url):
 
 
 def main():
-    searchTerm = "USB fingerprint reader".replace(" ", "+")
+    searchTerm = "keyboard".replace(" ", "+")
 
     # Get the page
     page = get_page(f"https://www.pccasegear.com/search?query={searchTerm}&page=1")
@@ -44,25 +47,39 @@ def main():
 
     # If the page loaded correctly, extract the product names, prices and urls
     # save them to lists with the same index
-    product_name = []
-    for product in product_name_element:
-        product_name.append(product.text.strip())
+    products = {}
+    for i in range(len(product_name_element)):
+        parsed_url = urlparse(url_element[i]["href"])
+        product_name = parsed_url.path.split("/")[-1].replace("-", " ")
 
-    product_price = []
-    for price in product_price_element:
-        price = price.find("div", class_="price").text
-        product_price.append(price)
-
-    url = []
-    for product in url_element:
-        url.append("https://www.pccasegear.com" + product["href"])
+        products[product_name.strip()] = {
+            "price": product_price_element[i].find("div", class_="price").text,
+            "url": "https://www.pccasegear.com" + url_element[i]["href"],
+        }
 
     # Print the product name, price and url for each product
-    for i in range(len(product_name)):
-        print(f"Product Name: {product_name[i]}")
-        print(f"Price: {product_price[i]}")
-        print(f"URL: {url[i]}")
+    for key, value in products.items():
+        print(f"Product Name: {key}")
+        print(f"Price: {value['price']}")
+        print(f"URL: {value['url']}")
         print()
+
+    # Load existing data
+
+    try:
+        with open("products.json", "r") as f:
+            existing_data = json.load(f)
+    except FileNotFoundError:
+        existing_data = {}
+
+    # Update data
+    for key, value in products.items():
+        if key not in existing_data:
+            existing_data[key] = value
+
+    # Write data back to file
+    with open("products.json", "w") as f:
+        json.dump(existing_data, f)
 
 
 main()
