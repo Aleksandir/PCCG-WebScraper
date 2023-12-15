@@ -48,8 +48,17 @@ def save_data(data):
         existing_data = {}
 
     # Update data
+    updated = False
     for key, value in data.items():
         if key not in existing_data:
+            existing_data[key] = value
+
+        elif existing_data[key] != value:
+            print("**Updates**") if not updated else None
+            updated = True
+            print(
+                f"\nKey: {key}\n- Old Value: {existing_data[key]}\n- New Value: {value}\n"
+            )
             existing_data[key] = value
 
     # Write data back to file
@@ -58,7 +67,7 @@ def save_data(data):
 
 
 def main():
-    searchTerm = "web cam".replace(" ", "+")
+    searchTerm = "keyboard".replace(" ", "+")
 
     # Get the page
     page = get_page(f"https://www.pccasegear.com/search?query={searchTerm}&page=1")
@@ -89,15 +98,10 @@ def main():
             "url": "https://www.pccasegear.com" + url_element["href"],
         }
 
-    # Print the product name, price and url for each product
-    for key, value in products.items():
-        print(f"Product Name: {key}")
-        print(f"Price: {value['price']}")
-        print(f"URL: {value['url']}")
-        print()
-
     # Save the data to a JSON file
     save_data(products)
+
+    print("Done")
 
 
 main()
