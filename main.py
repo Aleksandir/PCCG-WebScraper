@@ -108,10 +108,14 @@ def main():
             parsed_url = urlparse(url_element["href"])
             product_name = parsed_url.path.split("/")[-1].replace("-", " ")
 
-            products[product_name.strip()] = {
-                "price": price_element.find("div", class_="price").text,
-                "url": "https://www.pccasegear.com" + url_element["href"],
-            }
+            # If the product name is empty, skip it
+            if product_name.strip() == "":
+                continue
+            else:
+                products[product_name.strip()] = {
+                    "price": price_element.find("div", class_="price").text,
+                    "url": "https://www.pccasegear.com" + url_element["href"],
+                }
 
         # Increment page number
         page_number += 1
