@@ -1,9 +1,15 @@
 import json
+from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlparse
 
+import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+
+options = Options()
+options.add_argument("--headless")
+browser = webdriver.Firefox(options=options)
 
 
 def get_page(url):
@@ -16,13 +22,8 @@ def get_page(url):
     Returns:
         BeautifulSoup: The parsed HTML content of the web page.
     """
-    options = Options()
-    options.add_argument("--headless")
-
-    browser = webdriver.Firefox(options=options)
     browser.get(url)
     soup = BeautifulSoup(browser.page_source, "html.parser")
-    browser.quit()
 
     return soup
 
@@ -67,7 +68,7 @@ def save_data(data):
 
 
 def main():
-    searchTerm = "webcam".replace(" ", "+")
+    searchTerm = "keyboard".replace(" ", "+")
 
     # Get the page
     page_number = 1
@@ -122,6 +123,7 @@ def main():
     # Save the data
     save_data(products)
     print(f"{len(products)} products saved to products.json")
+    browser.quit()
 
 
 main()
