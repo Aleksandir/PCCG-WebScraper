@@ -77,11 +77,14 @@ def main():
         page = get_page(
             f"https://www.pccasegear.com/search?query={searchTerm}&page={page_number}"
         )
-        page_viewing = int(
-            page.find(
-                "a", class_="ais-Pagination-link ais-Pagination-link--selected"
-            ).text
-        )
+        try:
+            page_viewing = int(
+                page.find(
+                    "a", class_="ais-Pagination-link ais-Pagination-link--selected"
+                ).text
+            )
+        except AttributeError:
+            page_viewing = None
         # test if the current page is the page we are viewing
         # otherwise we have reached the end of the search results
         if page_viewing == page_number:
