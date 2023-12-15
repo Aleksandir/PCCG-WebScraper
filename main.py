@@ -62,27 +62,29 @@ def main():
     page = get_page(f"https://www.pccasegear.com/search?query={searchTerm}&page=1")
 
     # Search elements for the first product and its name, price and url
-    product_name_element = page.findAll("span", class_="product-model")
-    product_price_element = page.findAll("div", class_="price-box")
-    url_element = page.findAll("a", class_="product-image")
+    product_name_elements = page.findAll("span", class_="product-model")
+    product_price_elements = page.findAll("div", class_="price-box")
+    url_elements = page.findAll("a", class_="product-image")
 
     # check if the page loaded correctly by checking if the elements exist
-    if not all([product_name_element, product_price_element, url_element]):
+    if not all([product_name_elements, product_price_elements, url_elements]):
         print("The page did not load correctly.")
         with open("error_page.html", "w", encoding="utf-8") as f:
             f.write(page.prettify())
         return
 
     # If the page loaded correctly, extract the product names, prices and urls
-    # save them to lists with the same index
+    # save them to a dictionary
     products = {}
-    for i in range(len(product_name_element)):
-        parsed_url = urlparse(url_element[i]["href"])
+    for name_element, price_element, url_element in zip(
+        product_name_elements, product_price_elements, url_elements
+    ):
+        parsed_url = urlparse(url_element["href"])
         product_name = parsed_url.path.split("/")[-1].replace("-", " ")
 
         products[product_name.strip()] = {
-            "price": product_price_element[i].find("div", class_="price").text,
-            "url": "https://www.pccasegear.com" + url_element[i]["href"],
+            "price": price_element.find("div", class_="price").text,
+            "url": "https://www.pccasegear.com" + url_element["href"],
         }
 
     # Print the product name, price and url for each product
