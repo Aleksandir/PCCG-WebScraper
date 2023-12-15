@@ -14,6 +14,13 @@ options.add_argument("--headless")
 browser = webdriver.Firefox(options=options)
 
 
+def get_search_pages(file):
+    with open(file, "r") as f:
+        search_terms = f.readlines()
+
+    return search_terms
+
+
 def get_page(url):
     """
     Retrieves the HTML content of a web page using Selenium and BeautifulSoup.
@@ -94,6 +101,11 @@ def scrape_product_category_page(url):
     return products
 
 
+#! This function is not complete
+#! once search page circles back to the first page, it will not stop loading
+# The page did not load correctly. Skipping...
+# The page did not load correctly. Skipping...
+# The page did not load correctly. Skipping...
 def scrape_search_page(searchTerm):
     """
     Scrapes the search page of a website to retrieve product information.
@@ -102,12 +114,8 @@ def scrape_search_page(searchTerm):
         searchTerm (str): The search term used to query the website.
 
     Returns:
-        dict: A dictionary containing the product names, prices, and URLs.
+        dict: A dictionary containing the product names as keys and their corresponding prices and URLs as values.
     """
-    # Rest of the code...
-
-
-def scrape_search_page(searchTerm):
     # Get the page
     page_number = 1
     products = {}
@@ -124,11 +132,11 @@ def scrape_search_page(searchTerm):
         except AttributeError:
             if page_number == 1:
                 print("No results found.")
-                sys.exit()
             else:
                 print("The page did not load correctly. Skipping...")
                 page_number += 1
                 continue
+
         # test if the current page is the page we are viewing
         # otherwise we have reached the end of the search results
         if page_viewing == page_number:
@@ -172,28 +180,25 @@ def scrape_search_page(searchTerm):
 
 
 def main():
+    SOURCES_FILE = "sources.txt"
     print("Scraping PCCaseGear...")
-    while True:
-        print("1. Search for a product")
-        print("2. Scrape a product category")
-        print("3. Exit")
-        choice = input("Enter your choice: ")
-        while choice not in ["1", "2", "3"]:
-            choice = input("Enter your choice: ")
 
-        if choice == "1":
-            category = input("Enter the product category: ")
-            products = scrape_search_page(category)
-        elif choice == "2":
-            url = input("Enter the URL of the product category: ")
-            products = scrape_product_category_page(url)
-        elif choice == "3":
-            browser.quit()
-            sys.exit()
+    search_terms = get_search_pages(SOURCES_FILE)
 
-        # Save the data
-        save_data(products)
-        print(f"{len(products)} products saved to products.json")
+    for term in search_terms:
+        if term.startswith("https://"):
+            print(f"Scraping {term.split("/")[-1].replace("-", " ").strip()}...")
+            products = scrape_product_category_page(term)
+        else:
+            print(f"Searching for {term}...")
+            products = scrape_search_page(term)
+
+    # Save data
+    save_data(products)
+    print(f"{len(products)} products saved to products.json")
+
+    # browser.quit()
+    sys.exit()
 
 
 main()
