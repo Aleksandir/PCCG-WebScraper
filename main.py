@@ -5,6 +5,15 @@ from selenium.webdriver.firefox.service import Service
 
 
 def get_page(url):
+    """
+    Retrieves the HTML content of a web page using Selenium and BeautifulSoup.
+
+    Args:
+        url (str): The URL of the web page to retrieve.
+
+    Returns:
+        BeautifulSoup: The parsed HTML content of the web page.
+    """
     options = Options()
     options.add_argument("--headless")
 
