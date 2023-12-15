@@ -31,11 +31,9 @@ def main():
     page = get_page(f"https://www.pccasegear.com/search?query={searchTerm}&page=1")
 
     # Search elements for the first product and its name, price and url
-    product_name_element = page.find("span", class_="product-model")
-    product_price_element = page.find("div", class_="price-box").find(
-        "div", class_="price"
-    )
-    url_element = page.find("a", class_="product-image")
+    product_name_element = page.findAll("span", class_="product-model")
+    product_price_element = page.findAll("div", class_="price-box")
+    url_element = page.findAll("a", class_="product-image")
 
     # check if the page loaded correctly by checking if the elements exist
     if not all([product_name_element, product_price_element, url_element]):
@@ -44,15 +42,27 @@ def main():
             f.write(page.prettify())
         return
 
-    # If the page loaded correctly, extract the product name, price and url
-    product_name = product_name_element.text.strip()
-    product_price = product_price_element.text.strip()
-    url = "https://www.pccasegear.com" + url_element["href"]
+    # If the page loaded correctly, extract the product names, prices and urls
+    # save them to lists with the same index
+    product_name = []
+    for product in product_name_element:
+        product_name.append(product.text.strip())
 
-    # Print the product name, price and url
-    print(f"Product Name: {product_name}")
-    print(f"Price: {product_price}")
-    print(f"URL: {url}")
+    product_price = []
+    for price in product_price_element:
+        price = price.find("div", class_="price").text
+        product_price.append(price)
+
+    url = []
+    for product in url_element:
+        url.append("https://www.pccasegear.com" + product["href"])
+
+    # Print the product name, price and url for each product
+    for i in range(len(product_name)):
+        print(f"Product Name: {product_name[i]}")
+        print(f"Price: {product_price[i]}")
+        print(f"URL: {url[i]}")
+        print()
 
 
 main()
