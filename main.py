@@ -69,6 +69,15 @@ def save_data(data):
 
 
 def scrape_product_category_page(url):
+    """
+    Scrapes a product category page and returns a dictionary of products.
+
+    Args:
+        url (str): The URL of the product category page.
+
+    Returns:
+        dict: A dictionary containing the product names, prices, and URLs.
+    """
     page = get_page(url)
     products = {}
     product_name_elements = page.findAll("a", class_="product-title")
@@ -82,6 +91,19 @@ def scrape_product_category_page(url):
         }
 
     return products
+
+
+def scrape_search_page(searchTerm):
+    """
+    Scrapes the search page of a website to retrieve product information.
+
+    Args:
+        searchTerm (str): The search term used to query the website.
+
+    Returns:
+        dict: A dictionary containing the product names, prices, and URLs.
+    """
+    # Rest of the code...
 
 
 def scrape_search_page(searchTerm):
@@ -149,23 +171,19 @@ def scrape_search_page(searchTerm):
 
 
 def main():
-    # print("Scraping PCCaseGear...")
-    # print("1. Search for a product")
-    # print("2. Scrape a product category")
-    # choice = input("Enter your choice: ")
-    # while choice not in ["1", "2"]:
-    #     choice = input("Enter your choice: ")
+    print("Scraping PCCaseGear...")
+    print("1. Search for a product")
+    print("2. Scrape a product category")
+    choice = input("Enter your choice: ")
+    while choice not in ["1", "2"]:
+        choice = input("Enter your choice: ")
 
-    # if choice == "1":
-    #     category = input("Enter the product category: ")
-    #     products = scrape_search_page(category)
-    # elif choice == "2":
-    #     url = input("Enter the URL of the product category: ")
-    #     products = scrape_product_category_page(url)
-
-    products = scrape_product_category_page(
-        "https://www.pccasegear.com/category/186_2181/memory/all-ddr5-memory"
-    )
+    if choice == "1":
+        category = input("Enter the product category: ")
+        products = scrape_search_page(category)
+    elif choice == "2":
+        url = input("Enter the URL of the product category: ")
+        products = scrape_product_category_page(url)
 
     # Save the data
     save_data(products)
