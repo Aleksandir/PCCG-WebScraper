@@ -42,6 +42,8 @@ def save_data(data):
     try:
         with open("products.json", "r") as f:
             existing_data = json.load(f)
+    except json.JSONDecodeError:
+        existing_data = {}
     except FileNotFoundError:
         existing_data = {}
 
@@ -56,7 +58,7 @@ def save_data(data):
 
 
 def main():
-    searchTerm = "keyboard".replace(" ", "+")
+    searchTerm = "web cam".replace(" ", "+")
 
     # Get the page
     page = get_page(f"https://www.pccasegear.com/search?query={searchTerm}&page=1")
