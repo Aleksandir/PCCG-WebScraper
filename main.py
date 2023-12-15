@@ -67,41 +67,57 @@ def save_data(data):
 
 
 def main():
-    searchTerm = "keyboard".replace(" ", "+")
+    searchTerm = "webcam".replace(" ", "+")
 
     # Get the page
-    page = get_page(f"https://www.pccasegear.com/search?query={searchTerm}&page=1")
-
-    # Search elements for the first product and its name, price and url
-    product_name_elements = page.findAll("span", class_="product-model")
-    product_price_elements = page.findAll("div", class_="price-box")
-    url_elements = page.findAll("a", class_="product-image")
-
-    # check if the page loaded correctly by checking if the elements exist
-    if not all([product_name_elements, product_price_elements, url_elements]):
-        print("The page did not load correctly.")
-        with open("error_page.html", "w", encoding="utf-8") as f:
-            f.write(page.prettify())
-        return
-
-    # If the page loaded correctly, extract the product names, prices and urls
-    # save them to a dictionary
+    page_number = 1
     products = {}
-    for name_element, price_element, url_element in zip(
-        product_name_elements, product_price_elements, url_elements
-    ):
-        parsed_url = urlparse(url_element["href"])
-        product_name = parsed_url.path.split("/")[-1].replace("-", " ")
+    while True:
+        page = get_page(
+            f"https://www.pccasegear.com/search?query={searchTerm}&page={page_number}"
+        )
+        page_viewing = int(
+            page.find(
+                "a", class_="ais-Pagination-link ais-Pagination-link--selected"
+            ).text
+        )
+        # test if the current page is the page we are viewing
+        # otherwise we have reached the end of the search results
+        if page_viewing == page_number:
+            print(f"Page {page_number} loaded.")
+        else:
+            break
 
-        products[product_name.strip()] = {
-            "price": price_element.find("div", class_="price").text,
-            "url": "https://www.pccasegear.com" + url_element["href"],
-        }
+        # Search elements for the first product and its name, price and url
+        product_name_elements = page.findAll("span", class_="product-model")
+        product_price_elements = page.findAll("div", class_="price-box")
+        url_elements = page.findAll("a", class_="product-image")
 
-    # Save the data to a JSON file
+        # check if the page loaded correctly by checking if the elements exist
+        if not all([product_name_elements, product_price_elements, url_elements]):
+            print("The page did not load correctly.")
+            with open("error_page.html", "w", encoding="utf-8") as f:
+                f.write(page.prettify())
+            break
+
+        # If the page loaded correctly, extract the product names, prices and urls
+        # save them to a dictionary
+        for name_element, price_element, url_element in zip(
+            product_name_elements, product_price_elements, url_elements
+        ):
+            parsed_url = urlparse(url_element["href"])
+            product_name = parsed_url.path.split("/")[-1].replace("-", " ")
+
+            products[product_name.strip()] = {
+                "price": price_element.find("div", class_="price").text,
+                "url": "https://www.pccasegear.com" + url_element["href"],
+            }
+
+        # Increment page number
+        page_number += 1
+    # Save the data
     save_data(products)
-
-    print("Done")
+    print(f"{len(products)} products saved to products.json")
 
 
 main()
