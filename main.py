@@ -1,8 +1,9 @@
 import json
-from concurrent.futures import ThreadPoolExecutor
+import sys
+
+# from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlparse
 
-import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -67,8 +68,33 @@ def save_data(data):
         json.dump(existing_data, f)
 
 
+def scrape_product_category_page(url):
+    page = get_page(url)
+    products = {}
+    product_name_elements = page.findAll("span", class_="product-model")
+    product_price_elements = page.findAll("div", class_="price-box")
+    url_elements = page.findAll("a", class_="product-image")
+
+    for name_element, price_element, url_element in zip(
+        product_name_elements, product_price_elements, url_elements
+    ):
+        parsed_url = urlparse(url_element["href"])
+        product_name = parsed_url.path.split("/")[-1].replace("-", " ")
+
+        # If the product name is empty, skip it
+        if product_name.strip() == "":
+            continue
+        else:
+            products[product_name.strip()] = {
+                "price": price_element.find("div", class_="price").text,
+                "url": "https://www.pccasegear.com" + url_element["href"],
+            }
+
+    return products
+
+
 def main():
-    searchTerm = "keyboard".replace(" ", "+")
+    searchTerm = "card".replace(" ", "+")
 
     # Get the page
     page_number = 1
@@ -84,7 +110,13 @@ def main():
                 ).text
             )
         except AttributeError:
-            page_viewing = None
+            if page_number == 1:
+                print("No results found.")
+                sys.exit()
+            else:
+                print("The page did not load correctly. Skipping...")
+                page_number += 1
+                continue
         # test if the current page is the page we are viewing
         # otherwise we have reached the end of the search results
         if page_viewing == page_number:
