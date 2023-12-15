@@ -27,6 +27,34 @@ def get_page(url):
     return soup
 
 
+def save_data(data):
+    """
+    Save the given data to a JSON file.
+
+    Parameters:
+    data (dict): The data to be saved.
+
+    Returns:
+    None
+    """
+    # Load existing data
+
+    try:
+        with open("products.json", "r") as f:
+            existing_data = json.load(f)
+    except FileNotFoundError:
+        existing_data = {}
+
+    # Update data
+    for key, value in data.items():
+        if key not in existing_data:
+            existing_data[key] = value
+
+    # Write data back to file
+    with open("products.json", "w") as f:
+        json.dump(existing_data, f)
+
+
 def main():
     searchTerm = "keyboard".replace(" ", "+")
 
@@ -64,22 +92,8 @@ def main():
         print(f"URL: {value['url']}")
         print()
 
-    # Load existing data
-
-    try:
-        with open("products.json", "r") as f:
-            existing_data = json.load(f)
-    except FileNotFoundError:
-        existing_data = {}
-
-    # Update data
-    for key, value in products.items():
-        if key not in existing_data:
-            existing_data[key] = value
-
-    # Write data back to file
-    with open("products.json", "w") as f:
-        json.dump(existing_data, f)
+    # Save the data to a JSON file
+    save_data(products)
 
 
 main()
