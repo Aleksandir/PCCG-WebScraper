@@ -1,51 +1,52 @@
-import pprint
-
-import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
+
+
+def get_page(url):
+    options = Options()
+    options.add_argument("--headless")
+
+    browser = webdriver.Firefox(options=options)
+    browser.get(url)
+    soup = BeautifulSoup(browser.page_source, "html.parser")
+    browser.quit()
+
+    return soup
 
 
 def main():
-    searchTerm = input("Enter the product you would like to search for: ").strip()
+    # searchTerm = input("Enter the product you would like to search for: ").strip()
+    searchTerm = "USB fingerprint reader"
+    for char in searchTerm:
+        if char == " ":
+            searchTerm = searchTerm.replace(" ", "+")
 
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-    }
+    # Get the page
+    page = get_page(f"https://www.pccasegear.com/search?query={searchTerm}&page=1")
 
-    page = requests.get(
-        f"https://www.woolworths.com.au/shop/search/products?searchTerm={searchTerm}&pageNumber=1&sortBy=CUPAsc",
-        headers=headers,
+    # Check if the page loaded correctly
+    product_name_element = page.find("span", class_="product-model")
+    product_price_element = page.find("div", {"class": "price-box"}).find(
+        "div", {"class": "price"}
     )
+    # pull the url for the product
+    url = page.find("a", class_="product-image")
+    url = "https://www.pccasegear.com" + url["href"]
+    if product_name_element is None or product_price_element is None:
+        print("The page did not load correctly.")
+        with open("error_page.html", "w", encoding="utf-8") as f:
+            f.write(page.prettify())
+        return
 
-    if page.status_code == 200:
-        print("Success!")
-        soup = BeautifulSoup(page.content, "html.parser")
+    # If the page loaded correctly, extract the product name and price
+    product_name = product_name_element.text.strip()
+    product_price = product_price_element.text.strip()
 
-        # Check if the page loaded correctly
-        product_name_element = soup.find("div", class_="title")
-        product_price_element = soup.find("div", class_="primary")
-        if product_name_element is None or product_price_element is None:
-            print("The page did not load correctly.")
-            with open("error_page.html", "w", encoding="utf-8") as f:
-                f.write(soup.prettify())
-            return
-
-        # If the page loaded correctly, extract the product name and price
-        product_name = product_name_element.text.strip()
-        product_price = product_price_element.text.strip()
-
-        print(f"Product Name: {product_name}")
-        print(f"Price: {product_price}")
-    else:
-        match page.status_code:
-            case 403:
-                print("Access denied!")
-            case 404:
-                print("Page not found!")
-            case 500:
-                print("Server error!")
-            case _:
-                print("Failure!")
-                print(page.status_code)
+    print(f"Product Name: {product_name}")
+    print(f"Price: {product_price}")
+    print(f"URL: {url}")
 
 
 main()
