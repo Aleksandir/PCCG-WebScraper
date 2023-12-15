@@ -71,24 +71,15 @@ def save_data(data):
 def scrape_product_category_page(url):
     page = get_page(url)
     products = {}
-    product_name_elements = page.findAll("span", class_="product-model")
+    product_name_elements = page.findAll("a", class_="product-title")
     product_price_elements = page.findAll("div", class_="price-box")
-    url_elements = page.findAll("a", class_="product-image")
 
-    for name_element, price_element, url_element in zip(
-        product_name_elements, product_price_elements, url_elements
-    ):
-        parsed_url = urlparse(url_element["href"])
-        product_name = parsed_url.path.split("/")[-1].replace("-", " ")
-
-        # If the product name is empty, skip it
-        if product_name.strip() == "":
-            continue
-        else:
-            products[product_name.strip()] = {
-                "price": price_element.find("div", class_="price").text,
-                "url": "https://www.pccasegear.com" + url_element["href"],
-            }
+    for i in range(len(product_name_elements)):
+        product_name = product_name_elements[i].text
+        products[product_name.strip()] = {
+            "price": product_price_elements[i].find("div", class_="price").text,
+            "url": product_name_elements[i]["href"],
+        }
 
     return products
 
@@ -158,19 +149,23 @@ def scrape_search_page(searchTerm):
 
 
 def main():
-    print("Scraping PCCaseGear...")
-    print("1. Search for a product")
-    print("2. Scrape a product category")
-    choice = input("Enter your choice: ")
-    while choice not in ["1", "2"]:
-        choice = input("Enter your choice: ")
+    # print("Scraping PCCaseGear...")
+    # print("1. Search for a product")
+    # print("2. Scrape a product category")
+    # choice = input("Enter your choice: ")
+    # while choice not in ["1", "2"]:
+    #     choice = input("Enter your choice: ")
 
-    if choice == "1":
-        category = input("Enter the product category: ")
-        products = scrape_search_page(category)
-    elif choice == "2":
-        url = input("Enter the URL of the product category: ")
-        products = scrape_product_category_page(url)
+    # if choice == "1":
+    #     category = input("Enter the product category: ")
+    #     products = scrape_search_page(category)
+    # elif choice == "2":
+    #     url = input("Enter the URL of the product category: ")
+    #     products = scrape_product_category_page(url)
+
+    products = scrape_product_category_page(
+        "https://www.pccasegear.com/category/186_2181/memory/all-ddr5-memory"
+    )
 
     # Save the data
     save_data(products)
