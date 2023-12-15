@@ -4,7 +4,7 @@
     "url": "https://www.pccasegear.com/products/37564/logitech-g213-prodigy-mech-dome-rgb-gaming-keyboard"
   },
   "asus rog falchion rgb compact wireless mech keyboard mx red": {
-    "price": "$989",
+    "price": "$99",
     "url": "https://www.pccasegear.com/products/52810/asus-rog-falchion-rgb-compact-wireless-mech-keyboard-mx-red"
   },
   "ducky one 2 mini rgb mechanical keyboard cherry silent red": {
@@ -12,11 +12,11 @@
     "url": "https://www.pccasegear.com/products/49943/ducky-one-2-mini-rgb-mechanical-keyboard-cherry-silent-red"
   },
   "logitech mk120 desktop combo": {
-    "price": "$285",
+    "price": "$25",
     "url": "https://www.pccasegear.com/products/15416/logitech-mk120-desktop-combo"
   },
   "keychron c2 wired rgb mech gateron brown switch": {
-    "price": "$1090",
+    "price": "$109",
     "url": "https://www.pccasegear.com/products/55783/keychron-c2-wired-rgb-mech-gateron-brown-switch"
   },
   "akko cream yellow pro v3 switches 45 pack": {
@@ -95,7 +95,7 @@
     "price": "$69",
     "url": "https://www.pccasegear.com/products/61108/creative-live-cam-sync-v3"
   },
-  "": { "price": "$149", "url": "https://www.pccasegear.com/bundle/200763/" },
+  "": { "price": "$899", "url": "https://www.pccasegear.com/bundle/201121/" },
   "logitech c270 hd webcam": {
     "price": "$49",
     "url": "https://www.pccasegear.com/products/17562/logitech-c270-hd-webcam"
@@ -139,5 +139,477 @@
   "logitech c930e webcam": {
     "price": "$159",
     "url": "https://www.pccasegear.com/products/25996/logitech-c930e-webcam"
+  },
+  "nzxt capsule cardioid usb microphone black": {
+    "price": "$89",
+    "url": "https://www.pccasegear.com/products/55466/nzxt-capsule-cardioid-usb-microphone-black"
+  },
+  "hyperx duocast rgb usb condenser microphone": {
+    "price": "$114",
+    "url": "https://www.pccasegear.com/products/58657/hyperx-duocast-rgb-usb-condenser-microphone"
+  },
+  "nzxt capsule cardioid usb microphone white": {
+    "price": "$89",
+    "url": "https://www.pccasegear.com/products/55465/nzxt-capsule-cardioid-usb-microphone-white"
+  },
+  "rode professional studio boom arm": {
+    "price": "$135",
+    "url": "https://www.pccasegear.com/products/37469/rode-professional-studio-boom-arm"
+  },
+  "shure sm7b cardioid dynamic vocal microphone": {
+    "price": "$649",
+    "url": "https://www.pccasegear.com/products/63285/shure-sm7b-cardioid-dynamic-vocal-microphone"
+  },
+  "brateck mds06 1 professional microphone boom arm stand": {
+    "price": "$79",
+    "url": "https://www.pccasegear.com/products/57057/brateck-mds06-1-professional-microphone-boom-arm-stand"
+  },
+  "rode psa1 professional studio boom arm": {
+    "price": "$179",
+    "url": "https://www.pccasegear.com/products/55805/rode-psa1-professional-studio-boom-arm"
+  },
+  "hyperx quadcast s usb condenser microphone white": {
+    "price": "$299",
+    "url": "https://www.pccasegear.com/products/58280/hyperx-quadcast-s-usb-condenser-microphone-white"
+  },
+  "antlion audio modmic uni directional microphone": {
+    "price": "$69",
+    "url": "https://www.pccasegear.com/products/47979/antlion-audio-modmic-uni-directional-microphone"
+  },
+  "streamplify mic arm cardioid usb microphone with mounting arm": {
+    "price": "$149",
+    "url": "https://www.pccasegear.com/products/56473/streamplify-mic-arm-cardioid-usb-microphone-with-mounting-arm"
+  },
+  "nzxt boom arm mini black": {
+    "price": "$99",
+    "url": "https://www.pccasegear.com/products/61599/nzxt-boom-arm-mini-black"
+  },
+  "elgato wave microphone boom arm": {
+    "price": "$139",
+    "url": "https://www.pccasegear.com/products/58051/elgato-wave-microphone-boom-arm"
+  },
+  "audio technica at2020usb usb recording microphone": {
+    "price": "$179",
+    "url": "https://www.pccasegear.com/products/27509/audio-technica-at2020usb-usb-recording-microphone"
+  },
+  "trust gxt 232 mantis usb streaming microphone": {
+    "price": "$25",
+    "url": "https://www.pccasegear.com/products/55233/trust-gxt-232-mantis-usb-streaming-microphone"
+  },
+  "hyperx quadcast s usb condenser microphone": {
+    "price": "$209",
+    "url": "https://www.pccasegear.com/products/56822/hyperx-quadcast-s-usb-condenser-microphone"
+  },
+  "krom kapsule hq microphone streaming kit": {
+    "price": "$89",
+    "url": "https://www.pccasegear.com/products/58639/krom-kapsule-hq-microphone-streaming-kit"
+  },
+  "audio technica at2020 cardioid microphone boom arm bundle": {
+    "price": "$249",
+    "url": "https://www.pccasegear.com/products/63105/audio-technica-at2020-cardioid-microphone-boom-arm-bundle"
+  },
+  "endgame gear xstrm usb microphone white": {
+    "price": "$159",
+    "url": "https://www.pccasegear.com/products/57375/endgame-gear-xstrm-usb-microphone-white"
+  },
+  "trust gxt 253 emita streaming microphone arm": {
+    "price": "$39",
+    "url": "https://www.pccasegear.com/products/55228/trust-gxt-253-emita-streaming-microphone-arm"
+  },
+  "zalman zm mic 1 microphone": {
+    "price": "$9",
+    "url": "https://www.pccasegear.com/products/2885/zalman-zm-mic-1-microphone"
+  },
+  "logitech brio 300 usb c webcam graphite": {
+    "price": "$89",
+    "url": "https://www.pccasegear.com/products/60954/logitech-brio-300-usb-c-webcam-graphite"
+  },
+  "avermedia pw513 4k uhd live streamer webcam": {
+    "price": "$209",
+    "url": "https://www.pccasegear.com/products/55467/avermedia-pw513-4k-uhd-live-streamer-webcam"
+  },
+  "logitech c920e hd webcam": {
+    "price": "$159",
+    "url": "https://www.pccasegear.com/products/62833/logitech-c920e-hd-webcam"
+  },
+  "logitech brio 505 usb c fhd webcam": {
+    "price": "$179",
+    "url": "https://www.pccasegear.com/products/62530/logitech-brio-505-usb-c-fhd-webcam"
+  },
+  "ubiquiti unifi protect g4 instant wireless camera": {
+    "price": "$219",
+    "url": "https://www.pccasegear.com/products/60121/ubiquiti-unifi-protect-g4-instant-wireless-camera"
+  },
+  "ubiquiti unifi g3 flex surveillance camera 3 pack": {
+    "price": "$425",
+    "url": "https://www.pccasegear.com/products/49080/ubiquiti-unifi-g3-flex-surveillance-camera-3-pack"
+  },
+  "ubiquiti unifi g4 dome surveillance camera": {
+    "price": "$359",
+    "url": "https://www.pccasegear.com/products/53989/ubiquiti-unifi-g4-dome-surveillance-camera"
+  },
+  "ubiquiti unifi ceiling mount for g3 flex camera": {
+    "price": "$35",
+    "url": "https://www.pccasegear.com/products/44584/ubiquiti-unifi-ceiling-mount-for-g3-flex-camera"
+  },
+  "tp link tc71 pan tilt home security wi fi camera": {
+    "price": "$54",
+    "url": "https://www.pccasegear.com/products/62830/tp-link-tc71-pan-tilt-home-security-wi-fi-camera"
+  },
+  "ubiquiti unifi protect g4 bullet surveillance camera": {
+    "price": "$379",
+    "url": "https://www.pccasegear.com/products/51733/ubiquiti-unifi-protect-g4-bullet-surveillance-camera"
+  },
+  "tp link tc70 pan tilt home security wi fi camera": {
+    "price": "$39",
+    "url": "https://www.pccasegear.com/products/62829/tp-link-tc70-pan-tilt-home-security-wi-fi-camera"
+  },
+  "samsung viewfinity s65vc uwqhd usb c pd 34in monitor with webcam": {
+    "price": "$855",
+    "url": "https://www.pccasegear.com/products/63266/samsung-viewfinity-s65vc-uwqhd-usb-c-pd-34in-monitor-with-webcam"
+  },
+  "ubiquiti unifi g4 pro surveillance camera": {
+    "price": "$899",
+    "url": "https://www.pccasegear.com/products/45899/ubiquiti-unifi-g4-pro-surveillance-camera"
+  },
+  "ubiquiti unifi g3 flex surveillance camera": {
+    "price": "$139",
+    "url": "https://www.pccasegear.com/products/42436/ubiquiti-unifi-g3-flex-surveillance-camera"
+  },
+  "tp link tc60 home security wi fi camera": {
+    "price": "$36",
+    "url": "https://www.pccasegear.com/products/62828/tp-link-tc60-home-security-wi-fi-camera"
+  },
+  "tp link tapo c420 smart wire free security camera system": {
+    "price": "$159",
+    "url": "https://www.pccasegear.com/products/62322/tp-link-tapo-c420-smart-wire-free-security-camera-system"
+  },
+  "philips 34e1c5600he wqhd 100hz 34in curved monitor with webcam": {
+    "price": "$695",
+    "url": "https://www.pccasegear.com/products/61386/philips-34e1c5600he-wqhd-100hz-34in-curved-monitor-with-webcam"
+  },
+  "ubiquiti unifi protect g4 bullet surveillance camera 3 pack": {
+    "price": "$1139",
+    "url": "https://www.pccasegear.com/products/53053/ubiquiti-unifi-protect-g4-bullet-surveillance-camera-3-pack"
+  },
+  "ubiquiti ir range extender for unifi protect g4 bullet camera": {
+    "price": "$135",
+    "url": "https://www.pccasegear.com/products/51734/ubiquiti-ir-range-extender-for-unifi-protect-g4-bullet-camera"
+  },
+  "tp link tapo c500 smart outdoor pan tilt security camera": {
+    "price": "$129",
+    "url": "https://www.pccasegear.com/products/62323/tp-link-tapo-c500-smart-outdoor-pan-tilt-security-camera"
+  },
+  "ubiquiti unifi protect camera ai 360 surveillance camera": {
+    "price": "$619",
+    "url": "https://www.pccasegear.com/products/58594/ubiquiti-unifi-protect-camera-ai-360-surveillance-camera"
+  },
+  "ubiquiti unifi g4 pro surveillance camera 3 pack": {
+    "price": "$2579",
+    "url": "https://www.pccasegear.com/products/47926/ubiquiti-unifi-g4-pro-surveillance-camera-3-pack"
+  },
+  "logitech meetup all in one ultra hd conference camera": {
+    "price": "$1349",
+    "url": "https://www.pccasegear.com/products/46801/logitech-meetup-all-in-one-ultra-hd-conference-camera"
+  },
+  "logitech connect video conference camera": {
+    "price": "$589",
+    "url": "https://www.pccasegear.com/products/43201/logitech-connect-video-conference-camera"
+  },
+  "ubiquiti unifi g5 pro ip camera": {
+    "price": "$769",
+    "url": "https://www.pccasegear.com/products/64238/ubiquiti-unifi-g5-pro-ip-camera"
+  },
+  "ubiquiti unifi protect g4 instant wireless camera bundle": {
+    "price": "$229",
+    "url": "https://www.pccasegear.com/products/64236/ubiquiti-unifi-protect-g4-instant-wireless-camera-bundle"
+  },
+  "tp link tc40 outdoor pan tilt security wi fi camera": {
+    "price": "$104",
+    "url": "https://www.pccasegear.com/products/63723/tp-link-tc40-outdoor-pan-tilt-security-wi-fi-camera"
+  },
+  "ubiquiti unifi g4 protect dome surveillance camera 3 pack": {
+    "price": "$1049",
+    "url": "https://www.pccasegear.com/products/63423/ubiquiti-unifi-g4-protect-dome-surveillance-camera-3-pack"
+  },
+  "viewsonic vg2756v 2k qhd ips webcam 27in monitor": {
+    "price": "$839",
+    "url": "https://www.pccasegear.com/products/63171/viewsonic-vg2756v-2k-qhd-ips-webcam-27in-monitor"
+  },
+  "lg 27bq75qc b qhd ips webcam 27in monitor": {
+    "price": "$609",
+    "url": "https://www.pccasegear.com/products/63036/lg-27bq75qc-b-qhd-ips-webcam-27in-monitor"
+  },
+  "ubiquiti unifi g5 bullet ip camera": {
+    "price": "$270",
+    "url": "https://www.pccasegear.com/products/62986/ubiquiti-unifi-g5-bullet-ip-camera"
+  },
+  "ubiquiti ai theta camera": {
+    "price": "$585",
+    "url": "https://www.pccasegear.com/products/62089/ubiquiti-ai-theta-camera"
+  },
+  "ubiquiti g5 dome ceiling camera": {
+    "price": "$365",
+    "url": "https://www.pccasegear.com/products/62077/ubiquiti-g5-dome-ceiling-camera"
+  },
+  "philips 242b1h fhd 75hz hello webcam ips 23 8in monitor": {
+    "price": "$219",
+    "url": "https://www.pccasegear.com/products/61394/philips-242b1h-fhd-75hz-hello-webcam-ips-23-8in-monitor"
+  },
+  "philips 27e1n5600he qhd 75hz 27in monitor with webcam": {
+    "price": "$459",
+    "url": "https://www.pccasegear.com/products/61278/philips-27e1n5600he-qhd-75hz-27in-monitor-with-webcam"
+  },
+  "ubiquiti unifi protect ai bullet 4mp surveillance camera": {
+    "price": "$765",
+    "url": "https://www.pccasegear.com/products/60972/ubiquiti-unifi-protect-ai-bullet-4mp-surveillance-camera"
+  },
+  "tp link vigi c440 4mp turret network camera 2 8mm": {
+    "price": "$79",
+    "url": "https://www.pccasegear.com/products/59680/tp-link-vigi-c440-4mp-turret-network-camera-2-8mm"
+  },
+  "tp link vigi c440 w 4mp wi fi turret camera 4mm": {
+    "price": "$89",
+    "url": "https://www.pccasegear.com/products/59678/tp-link-vigi-c440-w-4mp-wi-fi-turret-camera-4mm"
+  },
+  "tp link vigi c440 4mp network turret camera": {
+    "price": "$85",
+    "url": "https://www.pccasegear.com/products/59677/tp-link-vigi-c440-4mp-network-turret-camera"
+  },
+  "tp link vigi c340 w 4mp outdoor security wi fi bullet camera": {
+    "price": "$109",
+    "url": "https://www.pccasegear.com/products/59624/tp-link-vigi-c340-w-4mp-outdoor-security-wi-fi-bullet-camera"
+  },
+  "ubiquiti unifi protect g4 ptz surveillance camera": {
+    "price": "$3369",
+    "url": "https://www.pccasegear.com/products/54259/ubiquiti-unifi-protect-g4-ptz-surveillance-camera"
+  },
+  "logitech ultra hd conferencecam system with auto camera": {
+    "price": "$3899",
+    "url": "https://www.pccasegear.com/products/49332/logitech-ultra-hd-conferencecam-system-with-auto-camera"
+  },
+  "logitech rally ultra hd ptz conference camera": {
+    "price": "$2069",
+    "url": "https://www.pccasegear.com/products/45876/logitech-rally-ultra-hd-ptz-conference-camera"
+  },
+  "logitech ptz pro 2 video conference camera remote": {
+    "price": "$1165",
+    "url": "https://www.pccasegear.com/products/43203/logitech-ptz-pro-2-video-conference-camera-remote"
+  },
+  "logitech group video conference camera": {
+    "price": "$1899",
+    "url": "https://www.pccasegear.com/products/43202/logitech-group-video-conference-camera"
+  },
+  "canless air o2 hurricane 320": {
+    "price": "$189",
+    "url": "https://www.pccasegear.com/products/31698/canless-air-o2-hurricane-320"
+  },
+  "it dusters poke precision cleaning swabs": {
+    "price": "$15",
+    "url": "https://www.pccasegear.com/products/60388/it-dusters-poke-precision-cleaning-swabs"
+  },
+  "nzxt signal 4k30 external capture card": {
+    "price": "$149",
+    "url": "https://www.pccasegear.com/products/58178/nzxt-signal-4k30-external-capture-card"
+  },
+  "gigabyte g5 core i5 rtx 4060 15 6in fhd 144hz laptop": {
+    "price": "$1449",
+    "url": "https://www.pccasegear.com/products/63613/gigabyte-g5-core-i5-rtx-4060-15-6in-fhd-144hz-laptop"
+  },
+  "sandisk extreme pro microsdxc uhs i 128gb": {
+    "price": "$39",
+    "url": "https://www.pccasegear.com/products/59893/sandisk-extreme-pro-microsdxc-uhs-i-128gb"
+  },
+  "canless air o2 hurricane esd safe": {
+    "price": "$229",
+    "url": "https://www.pccasegear.com/products/37289/canless-air-o2-hurricane-esd-safe"
+  },
+  "choetech 20000mah usb c power bank": {
+    "price": "$49",
+    "url": "https://www.pccasegear.com/products/63053/choetech-20000mah-usb-c-power-bank"
+  },
+  "streamplify light 10 26cm ring light": {
+    "price": "$59",
+    "url": "https://www.pccasegear.com/products/56471/streamplify-light-10-26cm-ring-light"
+  },
+  "blue microphones compass boom arm premium tube style black": {
+    "price": "$169",
+    "url": "https://www.pccasegear.com/products/41936/blue-microphones-compass-boom-arm-premium-tube-style-black"
+  },
+  "canless air x3 hurricane 400 kmh": {
+    "price": "$249",
+    "url": "https://www.pccasegear.com/products/34437/canless-air-x3-hurricane-400-kmh"
+  },
+  "ubiquiti 48vdc 15w poe injector": {
+    "price": "$19",
+    "url": "https://www.pccasegear.com/products/61513/ubiquiti-48vdc-15w-poe-injector"
+  },
+  "canless air x3 hurricane 400 kmh variable speed": {
+    "price": "$259",
+    "url": "https://www.pccasegear.com/products/45478/canless-air-x3-hurricane-400-kmh-variable-speed"
+  },
+  "blue microphones radius iii yeti suspension mount black": {
+    "price": "$89",
+    "url": "https://www.pccasegear.com/products/42942/blue-microphones-radius-iii-yeti-suspension-mount-black"
+  },
+  "sandisk extreme pro microsdxc uhs i 256gb": {
+    "price": "$55",
+    "url": "https://www.pccasegear.com/products/63740/sandisk-extreme-pro-microsdxc-uhs-i-256gb"
+  },
+  "ubiquiti unifi protect g4 doorbell pro": {
+    "price": "$675",
+    "url": "https://www.pccasegear.com/products/62498/ubiquiti-unifi-protect-g4-doorbell-pro"
+  },
+  "gigabyte aorus 7 core i5 rtx 4050 17 3in fhd 360hz laptop": {
+    "price": "$1499",
+    "url": "https://www.pccasegear.com/products/61991/gigabyte-aorus-7-core-i5-rtx-4050-17-3in-fhd-360hz-laptop"
+  },
+  "alogic usb c to multi card reader and 3 port usb hub": {
+    "price": "$39",
+    "url": "https://www.pccasegear.com/products/43048/alogic-usb-c-to-multi-card-reader-and-3-port-usb-hub"
+  },
+  "elgato collapsible green screen": {
+    "price": "$229",
+    "url": "https://www.pccasegear.com/products/41029/elgato-collapsible-green-screen"
+  },
+  "sandisk extreme pro microsdhc uhs i 32gb": {
+    "price": "$19",
+    "url": "https://www.pccasegear.com/products/39923/sandisk-extreme-pro-microsdhc-uhs-i-32gb"
+  },
+  "logitech bcc950 conferencecam": {
+    "price": "$269",
+    "url": "https://www.pccasegear.com/products/25884/logitech-bcc950-conferencecam"
+  },
+  "infinity m7 ryzen 7 rtx 4060 17 3in 165hz laptop": {
+    "price": "$1999",
+    "url": "https://www.pccasegear.com/products/63178/infinity-m7-ryzen-7-rtx-4060-17-3in-165hz-laptop"
+  },
+  "streamplify light 14 36cm ring light": {
+    "price": "$139",
+    "url": "https://www.pccasegear.com/products/56472/streamplify-light-14-36cm-ring-light"
+  },
+  "ubiquiti poe adapter for protect wifi g4 cameras": {
+    "price": "$119",
+    "url": "https://www.pccasegear.com/products/62091/ubiquiti-poe-adapter-for-protect-wifi-g4-cameras"
+  },
+  "blue microphones yeticaster pro broadcast bundle": {
+    "price": "$349",
+    "url": "https://www.pccasegear.com/products/60485/blue-microphones-yeticaster-pro-broadcast-bundle"
+  },
+  "blue microphones yeti nano usb microphone grey": {
+    "price": "$149",
+    "url": "https://www.pccasegear.com/products/58783/blue-microphones-yeti-nano-usb-microphone-grey"
+  },
+  "elgato key light led panel": {
+    "price": "$299",
+    "url": "https://www.pccasegear.com/products/45715/elgato-key-light-led-panel"
+  },
+  "infinity m7 ryzen 7 rtx 4050 17 3in 165hz laptop": {
+    "price": "$1779",
+    "url": "https://www.pccasegear.com/products/63179/infinity-m7-ryzen-7-rtx-4050-17-3in-165hz-laptop"
+  },
+  "elgato cold shoe adjustable mount": {
+    "price": "$35",
+    "url": "https://www.pccasegear.com/products/59553/elgato-cold-shoe-adjustable-mount"
+  },
+  "elgato ring light": {
+    "price": "$277",
+    "url": "https://www.pccasegear.com/products/56464/elgato-ring-light"
+  },
+  "msi creator z17 hx studio core i9 rtx 4070 17 3in 165hz laptop": {
+    "price": "$4599",
+    "url": "https://www.pccasegear.com/products/61935/msi-creator-z17-hx-studio-core-i9-rtx-4070-17-3in-165hz-laptop"
+  },
+  "elgato mini mount": {
+    "price": "$79",
+    "url": "https://www.pccasegear.com/products/59591/elgato-mini-mount"
+  },
+  "ubiquiti unifi protect hdmi poe viewport": {
+    "price": "$399",
+    "url": "https://www.pccasegear.com/products/50649/ubiquiti-unifi-protect-hdmi-poe-viewport"
+  },
+  "audio technica at atr6550x condenser shotgun microphone": {
+    "price": "$59",
+    "url": "https://www.pccasegear.com/products/50582/audio-technica-at-atr6550x-condenser-shotgun-microphone"
+  },
+  "elgato game capture hd60 pro": {
+    "price": "$259",
+    "url": "https://www.pccasegear.com/products/33684/elgato-game-capture-hd60-pro"
+  },
+  "asus rog flow x13 ryzen 9 rtx 4050 13in 165hz laptop": {
+    "price": "$2599",
+    "url": "https://www.pccasegear.com/products/63535/asus-rog-flow-x13-ryzen-9-rtx-4050-13in-165hz-laptop"
+  },
+  "asus rog strix g17 ryzen 9 rtx 4060 17 3in 240hz laptop": {
+    "price": "$3099",
+    "url": "https://www.pccasegear.com/products/63534/asus-rog-strix-g17-ryzen-9-rtx-4060-17-3in-240hz-laptop"
+  },
+  "logitech tap ip with roommate meetup and compute mount": {
+    "price": "$2589",
+    "url": "https://www.pccasegear.com/products/62081/logitech-tap-ip-with-roommate-meetup-and-compute-mount"
+  },
+  "msi creator z17 hx studio core i9 rtx 4060 17 3in 165hz laptop": {
+    "price": "$3799",
+    "url": "https://www.pccasegear.com/products/62014/msi-creator-z17-hx-studio-core-i9-rtx-4060-17-3in-165hz-laptop"
+  },
+  "msi creator z16 hx studio core i7 rtx 4060 16in 120hz laptop": {
+    "price": "$3299",
+    "url": "https://www.pccasegear.com/products/61850/msi-creator-z16-hx-studio-core-i7-rtx-4060-16in-120hz-laptop"
+  },
+  "rode videomic me c directional microphone": {
+    "price": "$89",
+    "url": "https://www.pccasegear.com/products/53740/rode-videomic-me-c-directional-microphone"
+  },
+  "ubiquiti airmax nanostation 5ghz ac cpe": {
+    "price": "$219",
+    "url": "https://www.pccasegear.com/products/42315/ubiquiti-airmax-nanostation-5ghz-ac-cpe"
+  },
+  "gigabyte g5 core i7 rtx 4050 15 6in fhd 144hz laptop": {
+    "price": "$1599",
+    "url": "https://www.pccasegear.com/products/63930/gigabyte-g5-core-i7-rtx-4050-15-6in-fhd-144hz-laptop"
+  },
+  "philips 40b1u6903ch 5k2k 75hz 40in curved monitor": {
+    "price": "$2199",
+    "url": "https://www.pccasegear.com/products/63716/philips-40b1u6903ch-5k2k-75hz-40in-curved-monitor"
+  },
+  "asus rog strix g17 ryzen 9 rtx 4070 17 3in 240hz laptop": {
+    "price": "$3499",
+    "url": "https://www.pccasegear.com/products/63533/asus-rog-strix-g17-ryzen-9-rtx-4070-17-3in-240hz-laptop"
+  },
+  "msi creator z16 hx studio core i9 rtx 4070 16in 120hz laptop": {
+    "price": "$4399",
+    "url": "https://www.pccasegear.com/products/61934/msi-creator-z16-hx-studio-core-i9-rtx-4070-16in-120hz-laptop"
+  },
+  "asus rog zephyrus duo 16 ryzen 9 3070 ti 14 1in 165hz laptop": {
+    "price": "$4699",
+    "url": "https://www.pccasegear.com/products/61921/asus-rog-zephyrus-duo-16-ryzen-9-3070-ti-14-1in-165hz-laptop"
+  },
+  "msi creator z16 hx studio core i7 rtx 4070 16in 120hz laptop": {
+    "price": "$3799",
+    "url": "https://www.pccasegear.com/products/61852/msi-creator-z16-hx-studio-core-i7-rtx-4070-16in-120hz-laptop"
+  },
+  "msi creator z16 hx studio core i9 rtx 4060 16in 120hz laptop": {
+    "price": "$3499",
+    "url": "https://www.pccasegear.com/products/61851/msi-creator-z16-hx-studio-core-i9-rtx-4060-16in-120hz-laptop"
+  },
+  "philips 24e1n5300he fhd 75hz 23 8in monitor": {
+    "price": "$315",
+    "url": "https://www.pccasegear.com/products/61277/philips-24e1n5300he-fhd-75hz-23-8in-monitor"
+  },
+  "ubiquiti unifi access reader pro": {
+    "price": "$539",
+    "url": "https://www.pccasegear.com/products/54285/ubiquiti-unifi-access-reader-pro"
+  },
+  "tp link poe160s poe injector": {
+    "price": "$39",
+    "url": "https://www.pccasegear.com/products/52570/tp-link-poe160s-poe-injector"
+  },
+  "rode sc10 3 5mm trrs to trrs patch cable": {
+    "price": "$15",
+    "url": "https://www.pccasegear.com/products/51771/rode-sc10-3-5mm-trrs-to-trrs-patch-cable"
+  },
+  "rode videomic me directional microphone for smartphones": {
+    "price": "$75",
+    "url": "https://www.pccasegear.com/products/38937/rode-videomic-me-directional-microphone-for-smartphones"
   }
 }
