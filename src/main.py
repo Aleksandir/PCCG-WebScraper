@@ -180,7 +180,7 @@ def scrape_search_page(searchTerm):
 
 
 def main():
-    SOURCES_FILE = "sources.txt"
+    SOURCES_FILE = "src/sources.txt"
     print("Scraping PCCaseGear...")
 
     search_terms = get_search_pages(SOURCES_FILE)
@@ -190,6 +190,7 @@ def main():
             print(f"Scraping {term.split("/")[-1].replace("-", " ").strip()}...")
             products = scrape_product_category_page(term)
         else:
+            #! This is not complete and will not work
             print(f"Searching for {term}...")
             products = scrape_search_page(term)
 
@@ -201,4 +202,5 @@ def main():
     sys.exit()
 
 
-main()
+if __name__ == "__main__":
+    main()
