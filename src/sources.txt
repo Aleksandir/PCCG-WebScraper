@@ -1,7 +1,9 @@
+https://www.pccasegear.com/category/1411/pccg-gaming-pcs
 https://www.pccasegear.com/category/1411_1917/pccg-gaming-pcs/ready-to-ship-gaming-pc
 https://www.pccasegear.com/category/1411_1918/pccg-gaming-pcs/customisable-gaming-pc
 https://www.pccasegear.com/category/1411_1920/pccg-gaming-pcs/home-office-system
 https://www.pccasegear.com/category/1552/barebone-nuc
+https://www.pccasegear.com/category/19/cables
 https://www.pccasegear.com/category/19_1140/cables/display-cables-adapters
 https://www.pccasegear.com/category/19_2188/cables/displayport-cables
 https://www.pccasegear.com/category/19_2189/cables/hdmi-cables
@@ -17,10 +19,12 @@ https://www.pccasegear.com/category/19_1424/cables/sleeved-cables
 https://www.pccasegear.com/category/19_334/cables/power-boards-cables
 https://www.pccasegear.com/category/19_1849/cables/cable-management
 https://www.pccasegear.com/category/19_1357/cables/cable-sleeving-mods
+https://www.pccasegear.com/category/1830/cameras
 https://www.pccasegear.com/category/1830_2082/cameras/webcams
 https://www.pccasegear.com/category/1830_2083/cameras/surveillance-cameras
 https://www.pccasegear.com/category/1830_2084/cameras/video-conferencing
 https://www.pccasegear.com/category/105/card-readers
+https://www.pccasegear.com/category/25/cases
 https://www.pccasegear.com/category/25_547/cases/all-models
 https://www.pccasegear.com/category/25_1573/cases/phanteks-cases
 https://www.pccasegear.com/category/25_1924/cases/lian-li-cases
@@ -48,10 +52,12 @@ https://www.pccasegear.com/category/25_1081/cases/thermaltake-cases
 https://www.pccasegear.com/category/25_408/cases/bay-devices
 https://www.pccasegear.com/category/25_1119/cases/mini-itx-cases
 https://www.pccasegear.com/category/25_1475/cases/filters-panels-accessories
+https://www.pccasegear.com/category/207/cooling
 https://www.pccasegear.com/category/207_23/cooling/cpu-cooling
 https://www.pccasegear.com/category/207_160/cooling/water-cooling
 https://www.pccasegear.com/category/207_163/cooling/compound-pads-cleaners
 https://www.pccasegear.com/category/207_142/cooling/notebook-cooling
+https://www.pccasegear.com/category/187/cpus
 https://www.pccasegear.com/category/187_2205/cpus/amd-am4-4000
 https://www.pccasegear.com/category/187_2138/cpus/amd-am4-5000
 https://www.pccasegear.com/category/187_2217/cpus/amd-am5-7000
@@ -59,6 +65,7 @@ https://www.pccasegear.com/category/187_2110/cpus/intel-1200-10th-gen
 https://www.pccasegear.com/category/187_2180/cpus/intel-1700-12th-gen
 https://www.pccasegear.com/category/187_2219/cpus/intel-1700-13th-gen
 https://www.pccasegear.com/category/187_2260/cpus/intel-1700-14th-gen
+https://www.pccasegear.com/category/9/fans-accessories
 https://www.pccasegear.com/category/9_1982/fans-accessories/all-models
 https://www.pccasegear.com/category/9_2198/fans-accessories/kolink-fans
 https://www.pccasegear.com/category/9_1574/fans-accessories/phanteks-fans
@@ -91,6 +98,7 @@ https://www.pccasegear.com/category/9_72/fans-accessories/frames-shrouds
 https://www.pccasegear.com/category/9_26/fans-accessories/grills-and-filters
 https://www.pccasegear.com/category/9_849/fans-accessories/fan-mounts
 https://www.pccasegear.com/category/692/flash-memory
+https://www.pccasegear.com/category/1764/gaming-chairs-desks
 https://www.pccasegear.com/category/1764_2007/gaming-chairs-desks/all-models-of-gaming-chairs
 https://www.pccasegear.com/category/1764_2013/gaming-chairs-desks/noblechairs-gaming-chairs
 https://www.pccasegear.com/category/1764_2116/gaming-chairs-desks/nitro-concepts-gaming-chairs
@@ -101,6 +109,7 @@ https://www.pccasegear.com/category/1764_2022/gaming-chairs-desks/gaming-desks
 https://www.pccasegear.com/category/1764_2008/gaming-chairs-desks/accessories
 https://www.pccasegear.com/category/284/gaming-peripherals
 https://www.pccasegear.com/category/1610/gift-vouchers
+https://www.pccasegear.com/category/193/graphics-cards
 https://www.pccasegear.com/category/193_2006/graphics-cards/geforce-gtx-1650
 https://www.pccasegear.com/category/193_2046/graphics-cards/geforce-gtx-1660-super
 https://www.pccasegear.com/category/193_2154/graphics-cards/geforce-rtx-3060
@@ -127,12 +136,14 @@ https://www.pccasegear.com/category/193_877/graphics-cards/amd-graphics-cards
 https://www.pccasegear.com/category/193_876/graphics-cards/nvidia-graphics-cards
 https://www.pccasegear.com/category/193_2225/graphics-cards/intel-graphics-cards
 https://www.pccasegear.com/category/193_1587/graphics-cards/accessories
+https://www.pccasegear.com/category/210/hard-drives-ssds
 https://www.pccasegear.com/category/210_902/hard-drives-ssds/solid-state-drives-ssd
 https://www.pccasegear.com/category/210_344/hard-drives-ssds/3-5-hard-drives
 https://www.pccasegear.com/category/210_173/hard-drives-ssds/external-storage
 https://www.pccasegear.com/category/210_901/hard-drives-ssds/accessories-cooling
 https://www.pccasegear.com/category/210_177/hard-drives-ssds/hard-drive-ssd-enclosures
 https://www.pccasegear.com/category/210_288/hard-drives-ssds/usb-disk-docks
+https://www.pccasegear.com/category/116/headphones
 https://www.pccasegear.com/category/116_998/headphones/all-models
 https://www.pccasegear.com/category/116_1098/headphones/asus-headsets
 https://www.pccasegear.com/category/116_1156/headphones/audio-technica-headphones
@@ -161,6 +172,7 @@ https://www.pccasegear.com/category/116_2044/headphones/wireless-in-ear-headphon
 https://www.pccasegear.com/category/116_1228/headphones/headphone-amps
 https://www.pccasegear.com/category/116_1410/headphones/audio-system-components
 https://www.pccasegear.com/category/116_1836/headphones/headphone-holders
+https://www.pccasegear.com/category/113/keyboards
 https://www.pccasegear.com/category/113_257/keyboards/all-keyboards
 https://www.pccasegear.com/category/113_2171/keyboards/akko-keyboards
 https://www.pccasegear.com/category/113_1703/keyboards/asus-keyboards
@@ -193,6 +205,7 @@ https://www.pccasegear.com/category/113_2065/keyboards/keyboard-wrist-rests
 https://www.pccasegear.com/category/113_1870/keyboards/keyboard-switches
 https://www.pccasegear.com/category/113_2170/keyboards/keyboard-cables
 https://www.pccasegear.com/category/113_2169/keyboards/custom-keyboard-accessories
+https://www.pccasegear.com/category/1538/laptops-notebooks
 https://www.pccasegear.com/category/1538_2073/laptops-notebooks/all-laptop-models
 https://www.pccasegear.com/category/1538_2067/laptops-notebooks/asus-laptops
 https://www.pccasegear.com/category/1538_2069/laptops-notebooks/gigabyte-laptops
@@ -204,6 +217,7 @@ https://www.pccasegear.com/category/1538_1542/laptops-notebooks/laptop-accessori
 https://www.pccasegear.com/category/1538_2074/laptops-notebooks/laptop-bags
 https://www.pccasegear.com/category/1538_2075/laptops-notebooks/laptop-cooling
 https://www.pccasegear.com/category/1356/led-lighting
+https://www.pccasegear.com/category/186/memory
 https://www.pccasegear.com/category/186_2181/memory/all-ddr5-memory
 https://www.pccasegear.com/category/186_1782/memory/all-ddr4-memory
 https://www.pccasegear.com/category/186_538/memory/all-ddr3-memory
@@ -214,10 +228,12 @@ https://www.pccasegear.com/category/186_774/memory/kingston-memory
 https://www.pccasegear.com/category/186_912/memory/g-skill-memory
 https://www.pccasegear.com/category/186_2226/memory/adata-memory
 https://www.pccasegear.com/category/186_2187/memory/crucial-memory
+https://www.pccasegear.com/category/2230/merchandise-apparel
 https://www.pccasegear.com/category/2230_2231/merchandise-apparel/tops
 https://www.pccasegear.com/category/2230_2232/merchandise-apparel/bottoms
 https://www.pccasegear.com/category/2230_2233/merchandise-apparel/accessories
 https://www.pccasegear.com/category/2230_2234/merchandise-apparel/bags
+https://www.pccasegear.com/category/258/mice-mouse-pads
 https://www.pccasegear.com/category/258_698/mice-mouse-pads/all-models
 https://www.pccasegear.com/category/258_1995/mice-mouse-pads/glorious-mice
 https://www.pccasegear.com/category/258_2125/mice-mouse-pads/endgame-gear-mice
@@ -242,6 +258,7 @@ https://www.pccasegear.com/category/258_1668/mice-mouse-pads/zowie-mice
 https://www.pccasegear.com/category/258_1154/mice-mouse-pads/other-brands
 https://www.pccasegear.com/category/258_1492/mice-mouse-pads/mouse-pads
 https://www.pccasegear.com/category/258_1284/mice-mouse-pads/mouse-accessories
+https://www.pccasegear.com/category/2048/microphones
 https://www.pccasegear.com/category/2048_2049/microphones/all-microphone-models
 https://www.pccasegear.com/category/2048_2050/microphones/antlion-microphones
 https://www.pccasegear.com/category/2048_2051/microphones/audio-technica-microphones
@@ -257,6 +274,7 @@ https://www.pccasegear.com/category/2048_2252/microphones/shure-microphones
 https://www.pccasegear.com/category/2048_2190/microphones/streamplify-microphones
 https://www.pccasegear.com/category/2048_2176/microphones/trust-microphones
 https://www.pccasegear.com/category/2048_2059/microphones/microphone-accessories
+https://www.pccasegear.com/category/558/monitors
 https://www.pccasegear.com/category/558_1094/monitors/all-monitor-models
 https://www.pccasegear.com/category/558_1889/monitors/gaming-monitors
 https://www.pccasegear.com/category/558_1212/monitors/23-26-monitors
@@ -278,6 +296,7 @@ https://www.pccasegear.com/category/558_1727/monitors/philips-monitors
 https://www.pccasegear.com/category/558_1092/monitors/samsung-monitors
 https://www.pccasegear.com/category/558_1822/monitors/viewsonic-monitors
 https://www.pccasegear.com/category/558_566/monitors/monitor-stands-and-brackets
+https://www.pccasegear.com/category/138/motherboards
 https://www.pccasegear.com/category/138_1874/motherboards/amd-socket-am4-2nd-gen
 https://www.pccasegear.com/category/138_2023/motherboards/amd-socket-am4-3rd-gen
 https://www.pccasegear.com/category/138_2220/motherboards/amd-socket-am5
@@ -286,6 +305,7 @@ https://www.pccasegear.com/category/138_2179/motherboards/intel-1700-12th-gen
 https://www.pccasegear.com/category/138_2221/motherboards/intel-1700-13th-gen
 https://www.pccasegear.com/category/138_2259/motherboards/intel-1700-14th-gen
 https://www.pccasegear.com/category/138_1877/motherboards/motherboard-accessories
+https://www.pccasegear.com/category/200/networking
 https://www.pccasegear.com/category/200_328/networking/network-adapters
 https://www.pccasegear.com/category/200_1438/networking/routers
 https://www.pccasegear.com/category/200_331/networking/switches
@@ -300,10 +320,12 @@ https://www.pccasegear.com/category/200_329/networking/accessories
 https://www.pccasegear.com/category/200_1102/networking/smart-home-security
 https://www.pccasegear.com/category/200_2111/networking/network-cables
 https://www.pccasegear.com/category/200_1855/networking/networking-tools
+https://www.pccasegear.com/category/658/optical-drives-media
 https://www.pccasegear.com/category/658_667/optical-drives-media/internal-optical-drives
 https://www.pccasegear.com/category/658_789/optical-drives-media/external-optical-drives
 https://www.pccasegear.com/category/658_661/optical-drives-media/media
 https://www.pccasegear.com/category/1581/phone-accessories
+https://www.pccasegear.com/category/15/power-supplies
 https://www.pccasegear.com/category/15_535/power-supplies/all-models
 https://www.pccasegear.com/category/15_2035/power-supplies/super-flower-power-supplies
 https://www.pccasegear.com/category/15_1962/power-supplies/phanteks-power-supplies
@@ -324,10 +346,12 @@ https://www.pccasegear.com/category/15_972/power-supplies/seasonic-power-supplie
 https://www.pccasegear.com/category/15_2041/power-supplies/sfx-power-supplies
 https://www.pccasegear.com/category/15_2196/power-supplies/ups
 https://www.pccasegear.com/category/1915/services
+https://www.pccasegear.com/category/375/software
 https://www.pccasegear.com/category/375_974/software/microsoft-windows
 https://www.pccasegear.com/category/375_1025/software/microsoft-office
 https://www.pccasegear.com/category/375_975/software/anti-virus-and-internet-security
 https://www.pccasegear.com/category/211/sound-cards
+https://www.pccasegear.com/category/567/speakers
 https://www.pccasegear.com/category/567_571/speakers/all-models
 https://www.pccasegear.com/category/567_1793/speakers/edifier-speakers
 https://www.pccasegear.com/category/567_575/speakers/logitech-speakers
@@ -339,11 +363,13 @@ https://www.pccasegear.com/category/567_2218/speakers/steelseries-speakers
 https://www.pccasegear.com/category/567_1718/speakers/bluetooth-speakers
 https://www.pccasegear.com/category/567_1103/speakers/speaker-accessories
 https://www.pccasegear.com/category/1141/streaming-video-capture
+https://www.pccasegear.com/category/83/tools-screws
 https://www.pccasegear.com/category/83_1978/tools-screws/dust-management
 https://www.pccasegear.com/category/83_1981/tools-screws/network
 https://www.pccasegear.com/category/83_266/tools-screws/toolkits
 https://www.pccasegear.com/category/83_1979/tools-screws/miscellaneous
 https://www.pccasegear.com/category/83_388/tools-screws/screws
+https://www.pccasegear.com/category/262/usb-devices-cards
 https://www.pccasegear.com/category/262_1926/usb-devices-cards/expansion-cards
 https://www.pccasegear.com/category/262_1927/usb-devices-cards/hubs
 https://www.pccasegear.com/category/262_1928/usb-devices-cards/power-adapters
@@ -368,4 +394,3 @@ https://www.pccasegear.com/category/207_160_298/water-cooling/led-lighting
 https://www.pccasegear.com/category/207_160_45/water-cooling/water-cooling-kits
 https://www.pccasegear.com/category/207_160_1694/water-cooling/all-in-one-liquid-coolers
 https://www.pccasegear.com/category/416/new-products
-https://www.pccasegear.com/category/1411/pccg-gaming-pcs
