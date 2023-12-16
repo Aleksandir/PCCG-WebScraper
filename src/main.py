@@ -139,7 +139,7 @@ def main():
 
     save_data(all_products)
     print(f"\n{len(all_products)} products scraped and saved in total.")
-
+    browser.quit()
     sys.exit()
 
 
