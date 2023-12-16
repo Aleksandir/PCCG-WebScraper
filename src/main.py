@@ -1,6 +1,7 @@
 import concurrent.futures
 import json
 import sys
+import threading
 
 # TODO Could look at using concurrent.futures to speed up the scraping process, currently seems fast enough
 # from concurrent.futures import ThreadPoolExecutor
@@ -9,6 +10,7 @@ from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+from tqdm import tqdm
 
 options = Options()
 options.add_argument("--headless")
@@ -102,12 +104,12 @@ def scrape_product_category_page(url):
     return products
 
 
+print_lock = threading.Lock()
+
+
 def scrape_and_save(url):
-    print(f"Scraping {url.split('/')[-1].replace('-', ' ').strip()}...")
     products = scrape_product_category_page(url)
-    save_data(products)
-    print(f"{len(products)} products saved")
-    return len(products)
+    return products
 
 
 def main():
@@ -116,11 +118,27 @@ def main():
 
     site_urls = get_search_pages(SOURCES_FILE)
 
+    all_products = {}
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        save_counts = executor.map(scrape_and_save, site_urls)
+        future_to_url = {
+            executor.submit(scrape_and_save, url): url for url in site_urls
+        }
 
-    total_saved = sum(save_counts)
-    print(f"\n{total_saved} products scraped and saved in total.")
+        for future in tqdm(
+            concurrent.futures.as_completed(future_to_url),
+            total=len(future_to_url),
+            desc="Scraping progress",
+        ):
+            url = future_to_url[future]
+            try:
+                data = future.result()
+            except Exception as exc:
+                print("%r generated an exception: %s" % (url, exc))
+            else:
+                all_products.update(data)
+
+    save_data(all_products)
+    print(f"\n{len(all_products)} products scraped and saved in total.")
 
     sys.exit()
 
