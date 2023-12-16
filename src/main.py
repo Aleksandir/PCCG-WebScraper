@@ -180,6 +180,7 @@ def scrape_search_page(searchTerm):
 
 
 def main():
+    save_count = 0
     SOURCES_FILE = "src/sources.txt"
     print("Scraping PCCaseGear...")
 
@@ -189,14 +190,15 @@ def main():
         if term.startswith("https://"):
             print(f"Scraping {term.split("/")[-1].replace("-", " ").strip()}...")
             products = scrape_product_category_page(term)
+            save_data(products)
+            print(f"{len(products)} products saved")
+            save_count += len(products)
         else:
             #! This is not complete and will not work
             print(f"Searching for {term}...")
             products = scrape_search_page(term)
 
-    # Save data
-    save_data(products)
-    print(f"{len(products)} products saved to products.json")
+    print(f"\n{save_count} products scraped and saved in total.")
 
     # browser.quit()
     sys.exit()
