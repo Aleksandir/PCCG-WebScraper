@@ -3,10 +3,6 @@ import json
 import sys
 import threading
 
-# TODO Could look at using concurrent.futures to speed up the scraping process, currently seems fast enough
-# from concurrent.futures import ThreadPoolExecutor
-from urllib.parse import urlparse
-
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options

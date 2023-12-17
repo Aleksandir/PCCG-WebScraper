@@ -1,5 +1,3 @@
-import re
-
 from main import get_page
 
 # scrape ul tag
