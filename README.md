@@ -1,10 +1,9 @@
 # Web Scraping Learning Tool
 
-This repository contains a Python program designed for educational purposes to teach web scraping techniques. The program takes a user-provided search term and scrapes e-commerce websites to return information about products, including the item name, available quantity, and price.
+This repository contains a Python program designed for educational purposes to learn web scraping techniques.
 
 ## Features
 
-- Search term input: Users can input any product name to search for.
 - Data extraction: The program scrapes product details such as item name, quantity, and price.
 - User-friendly output: Results are displayed in a structured format for easy reading.
 
@@ -12,18 +11,18 @@ This repository contains a Python program designed for educational purposes to t
 
 - Python: The primary programming language for the scraper.
 - BeautifulSoup: A library used for parsing HTML and XML documents.
-- Requests: A library for making HTTP requests in Python.
+- Selenium: A library used for automated browser testing and web scraping.
 
 ## How to Use
 
 1. Clone the repository to your local machine.
 2. Install the required dependencies using `pip install -r requirements.txt`.
-3. Run the program with `python scraper.py`.
+3. Run the program with `python main.py`.
 4. Enter the search term when prompted.
 5. View the scraped data in the output.
 
 ## License
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 Happy Scraping!
