@@ -8,6 +8,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from tqdm import tqdm
 
+# settings for Selenium and Firefox
 options = Options()
 options.add_argument("--headless")
 browser = webdriver.Firefox(options=options)
