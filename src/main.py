@@ -14,6 +14,15 @@ browser = webdriver.Firefox(options=options)
 
 
 def get_search_pages(file):
+    """
+    Reads a file and returns a list of search terms.
+
+    Args:
+        file (str): The path to the file containing the search terms.
+
+    Returns:
+        list: A list of search terms read from the file.
+    """
     with open(file, "r") as f:
         search_terms = f.readlines()
 
