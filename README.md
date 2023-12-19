@@ -4,7 +4,7 @@ This repository contains a Python program designed for educational purposes to l
 
 ## Features
 
-- Data extraction: The program scrapes product details such as item name, quantity, and price.
+- Data extraction: The program scrapes product details such as item name, quantity, and price from pccasegear.com as an example.
 - User-friendly output: Results are displayed in a structured format for easy reading.
 
 ## Technologies Used
